@@ -31,11 +31,6 @@ Total Duration: **6 months**
 
 ---
 
-## Course Taken By / Supervisor
-
-**Course Instructor:** Razorshi Prozzal Talukder (Lecturer, NEUB)
-
----
 
 ## 📂 Repository Structure
 ```
@@ -85,6 +80,4 @@ This repository reflects the theoretical learning and practical experience gaine
 
 ---
 
-## Connect
-
-Feel free to explore the folders and resources, and reach out if you have any questions or suggestions!
+**Supervised By** : **Razorshi Prozzal Talukder (Lecturer, NEUB)**
