@@ -33,15 +33,31 @@ pieces = ['p', 'r', 'n', 'b', 'q', 'k']
 colors = ['w', 'b']
 
 def load_pieces():
+    import os
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    image_dir = os.path.join(current_dir, 'image')
+    print(f"Looking for images in: {image_dir}")
+    
     for color in colors:
         for piece in pieces:
             key = color + piece
+            image_path = os.path.join(image_dir, f'{key}.png')
             try:
-                image = pygame.image.load(f'{key}.png')
+                print(f"Attempting to load: {image_path}")
+                if not os.path.exists(image_path):
+                    print(f"File does not exist: {image_path}")
+                    continue
+                image = pygame.image.load(image_path)
+                if image is None:
+                    print(f"Failed to load image: {image_path}")
+                    continue
                 piece_images[key] = pygame.transform.smoothscale(image, (SQUARE_SIZE, SQUARE_SIZE))
-            except:
-                print(f"Missing image: {key}.png")
+                print(f"Successfully loaded: {image_path}")
+            except Exception as e:
+                print(f"Error loading {image_path}: {str(e)}")
                 piece_images[key] = None
+    
+    print("Loaded pieces:", list(piece_images.keys()))
 
 load_pieces()
 
@@ -81,10 +97,18 @@ class ChessGame:
             piece = self.board.piece_at(square)
             if piece:
                 row, col = 7 - square // 8, square % 8
-                piece_key = ('w' if piece.color == chess.WHITE else 'b') + piece.symbol().lower()
+                symbol = piece.symbol()
+                print(f"Piece at {square}: symbol={symbol}")
+                if piece.color == chess.WHITE:
+                    piece_key = 'w' + symbol.lower()
+                else:
+                    piece_key = 'b' + symbol.lower()
+                print(f"Looking for image with key: {piece_key}")
                 image = piece_images.get(piece_key)
                 if image:
                     screen.blit(image, (MARGIN + col * SQUARE_SIZE, MARGIN + row * SQUARE_SIZE))
+                else:
+                    print(f"No image found for piece: {piece_key}, available keys: {list(piece_images.keys())}")
 
         # Messages
         if self.message:
