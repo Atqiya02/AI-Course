@@ -69,24 +69,23 @@ Key properties:
 
 ## 🖼️ Screenshots
 
-> 🧩 *You can take screenshots of the game running and place them in your project folder.*
+<p float="left">
+  <img src="screenshots/pic1.png" width="400" alt="Tic-Tac-Toe Game Start">
+  <img src="screenshots/pic2.png" width="400" alt="Tic-Tac-Toe Gameplay">
+</p>
 
-**Suggested file structure:**
+> 📸 These screenshots show:
+> * Initial game board layout
+> * Game in progress with X's and O's
 
+**Project Structure:**
 ```
-/your-project-folder
-|-- tic_tac_toe.py
-|-- README.md
-|-- screenshots/
-    |-- gameplay1.png
-    |-- gameplay2.png
-```
-
-To add screenshots in your `README.md`:
-
-```markdown
-![Gameplay 1](screenshots/gameplay1.png)
-![Gameplay 2](screenshots/gameplay2.png)
+Tic-Tac-Toe/
+├── tik_tak_toe.py
+├── README.md
+└── screenshots/
+    ├── pic1.png
+    └── pic2.png
 ```
 
 ---
