@@ -6,7 +6,7 @@ This is a classic Tic-Tac-Toe game implemented in Python using the `tkinter` GUI
   <img src="https://img.itch.zone/aW1nLzIxNzQ2MzAuZ2lm/original/uOr674.gif" width="500" alt="Chess Gameplay Screenshot">
 </p>
 
----
+
 
 ## 📦 Requirements
 

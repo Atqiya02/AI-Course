@@ -67,30 +67,40 @@ python chess_game.py
 ## 🖼️ Screenshots
 
 <p float="left">
-  <img src="game_start.png" width="280" alt="Start of Game">
-  <img src="piece_selected.png" width="280" alt="Piece Selected with Legal Moves">
-  <img src="checkmate.png" width="280" alt="Checkmate Message">
+  <img src="screenshots/game_start.png" width="400" alt="Initial Game Board">
+  <img src="screenshots/piece_selected.png" width="400" alt="Piece Selected with Legal Moves">
 </p>
 
-> 📸 You can capture your own screenshots using `PrtSc` or built-in tools and place them in a `/screenshots` folder for documentation.
+> 📸 These screenshots show:
+> * Initial game board setup
+> * Piece selection with highlighted legal moves
+>
+> The screenshots are stored in the `/screenshots` folder of the project.
 
 ---
 
 ## 📂 Folder Structure
 
 ```
-chess_project/
+Chess/
 ├── chess_game.py
-├── wp.png
-├── bp.png
-├── wr.png
-├── br.png
-├── ...
 ├── README.md
+├── image/
+│   ├── bb.png (black bishop)
+│   ├── bk.png (black king)
+│   ├── bn.png (black knight)
+│   ├── bp.png (black pawn)
+│   ├── bq.png (black queen)
+│   ├── br.png (black rook)
+│   ├── wb.png (white bishop)
+│   ├── wk.png (white king)
+│   ├── wn.png (white knight)
+│   ├── wp.png (white pawn)
+│   ├── wq.png (white queen)
+│   └── wr.png (white rook)
 └── screenshots/
     ├── game_start.png
-    ├── piece_selected.png
-    └── checkmate.png
+    └── piece_selected.png
 ```
 
 ---
