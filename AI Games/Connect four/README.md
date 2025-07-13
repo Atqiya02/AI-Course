@@ -3,7 +3,7 @@
 A Python implementation of the classic Connect Four game where you play against an AI opponent. The game features a graphical interface using Pygame and implements the Minimax algorithm with Alpha-Beta pruning for the computer player.
 
 <p align="center">
-  <img src="screenshots/gameplay.png"
+  <img src="screenshots/pic2.png" width="500" alt="Connect Four Gameplay">
 </p>
 
 ## 📦 Requirements
@@ -55,13 +55,16 @@ The game uses the **Minimax algorithm with Alpha-Beta pruning** for the computer
 
 ## 🖼️ Game Screenshots
 
-> Place your gameplay screenshots in a `screenshots` folder and link them here:
+<p float="left">
+  <img src="screenshots/pic1.png" width="400" alt="Connect Four Game Start">
+  <img src="screenshots/pic2.png" width="400" alt="Connect Four Gameplay">
+</p>
 
-```
-/screenshots
-  ├── gameplay1.png
-  ├── gameplay2.png
-```
+> 📸 These screenshots show:
+> * Initial game state and board layout
+> * Gameplay with pieces placed on the board
+>
+> Screenshots are stored in the `/screenshots` folder.
 
 ## 💡 Playing Tips
 
